@@ -984,8 +984,6 @@ h3,
   line-height: 1.65;
 }
 
-.step {}
-
 .step__index {
   color: var(--accent);
   font-size: 1.85rem;
