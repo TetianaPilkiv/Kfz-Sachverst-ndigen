@@ -33,7 +33,29 @@
                   <li><a href="leistung.html">Leistungen</a></li>
                   <li><a href="#contact">Kontakt</a></li>
                 </ul>
+
+                <div class="menu-contacts">
+                  <ul>
+                    <li><a href="tel:+491636777932">+49 163 67 77 932</a></li>
+                    <li><a href="mailto:info@kfz-sv-teres.de">info@kfz-sv-teres.de</a></li>
+                  </ul>
+                </div>
+
+                <div class="socials-contacts">
+                  <h3>Social Media</h3>
+                  <ul>
+                    <li><a href="#" aria-label="Instagram">IG</a></li>
+                    <li><a href="#" aria-label="Facebook">FB</a></li>
+                    <li><a href="#" aria-label="LinkedIn">IN</a></li>
+                  </ul>
+                </div>
               </nav>
+
+              <button class="burger-button" type="button" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
 
               <ul class="topbar__contacts">
                 <li><a href="tel:+49 1636777932">+49 163 67 77 932</a></li>
@@ -42,6 +64,7 @@
             </div>
           </div>
         </nav>
+        <div class="menu-overlay" aria-hidden="true"></div>
       </header>
 
       <section class="hero container">
@@ -102,7 +125,29 @@
         </article>
       </section>
 
-      <section class="trust section" id="trust">
+      <section class="contact" id="contact-panel">
+        <div class="container">
+          <div class="contact-panel">
+            <div>
+              <p class="eyebrow">Schnelle Erstorientierung</p>
+              <h2 class="contact-panel__title">Sie brauchen eine erste Einschatzung zu Ihrem Fall?</h2>
+              <p class="contact-panel__text">
+                Ob Unfallschaden, Wertermittlung oder Beweissicherung: ein
+                kurzes Gesprach hilft oft schon dabei, den richtigen nachsten
+                Schritt festzulegen.
+              </p>
+            </div>
+            <div class="contact-panel__actions">
+              <a class="button button--primary" href="tel:+491636777932">+49 163 67 77 932</a>
+              <a class="button button--ghost" href="mailto:info@kfz-sv-teres.de">
+                info@kfz-sv-teres.de
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust cases section" id="trust">
         <p class="section__ghost">VERTRAUEN</p>
         <div class="container">
           <p class="section__intro">
@@ -237,29 +282,7 @@
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="contact-panel">
-            <div>
-              <p class="eyebrow">Schnelle Erstorientierung</p>
-              <h2 class="contact-panel__title">Sie brauchen eine erste Einschatzung zu Ihrem Fall?</h2>
-              <p class="contact-panel__text">
-                Ob Unfallschaden, Wertermittlung oder Beweissicherung: ein
-                kurzes Gesprach hilft oft schon dabei, den richtigen nachsten
-                Schritt festzulegen.
-              </p>
-            </div>
-            <div class="contact-panel__actions">
-              <a class="button button--primary" href="tel:+491636777932">+49 163 67 77 932</a>
-              <a class="button button--ghost" href="mailto:info@kfz-sv-teres.de">
-                info@kfz-sv-teres.de
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="process section" id="process">
+      <section class="process cases section" id="process">
         <p class="section__ghost">ABLAUF</p>
         <div class="container">
           <h2 class="section__title">So lauft die Zusammenarbeit ab</h2>
@@ -296,7 +319,7 @@
                 <div class="process-stage__inner step">
                   <span class="step__index">04</span>
                   <h3>Gutachten erstellen</h3>
-                </div>    
+                </div>
                 <p>Alle relevanten Werte werden sauber ausgearbeitet und in einer belastbaren Form aufbereitet.</p>
               </article>
               <article class="process-step process-step--right-bottom">
@@ -315,7 +338,7 @@
             </div>
 
             <div class="process-stage__actions">
-              <a class="button button--primary process-stage__button" href="#contact">
+              <a class="button button--primary process-stage__button" href="#contact-panel">
                 Jetzt Kontakt aufnehmen
               </a>
             </div>
@@ -390,7 +413,7 @@
         </div>
       </section>
 
-      <section class="testimonials section" id="testimonials">
+      <section class="testimonials cases section" id="testimonials">
         <p class="section__ghost">Stimmen</p>
         <div class="container">
           <p class="section__intro">
@@ -443,7 +466,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
         <div class="footer__grid">
           <div class="footer__brand">
@@ -461,19 +484,19 @@
             <a href="mailto:info@kfz-sv-teres.de">info@kfz-sv-teres.de</a>
           </div>
 
-          <div class="footer__links">
+          <div class="info-links">
             <h3>Links</h3>
             <a href="#">Impressum</a>
             <a href="#">Datenschutz</a>
           </div>
 
-          <div class="footer__socials">
+          <div class="socials-contacts">
             <h3>Social Media</h3>
-            <div class="social-list">
-              <a class="social-link" href="#" aria-label="Instagram">IG</a>
-              <a class="social-link" href="#" aria-label="Facebook">FB</a>
-              <a class="social-link" href="#" aria-label="LinkedIn">IN</a>
-            </div>
+            <ul class="socials-contacts__list">
+              <li><a class="socials-contacts__link" href="#" aria-label="Instagram">IG</a></li>
+              <li><a class="socials-contacts__link" href="#" aria-label="Facebook">FB</a></li>
+              <li><a class="socials-contacts__link" href="#" aria-label="LinkedIn">IN</a></li>
+            </ul>
           </div>
         </div>
       </div>
